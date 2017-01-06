@@ -1,0 +1,38 @@
+.ui-segment{
+	color: #000000;
+	border: 0px solid #ff0000;
+	border-radius: 10px;
+	display:inline-block;
+	background-color: #FFFFFF;
+	font-family: 'Lato',Georgia, Serif;
+}
+.ui-segment span.option.active{
+	background-color: #FF7B07;
+	color: white;
+}
+.ui-segment span.option{
+	font-size: 15px;
+	padding-left: 23px;
+	padding-right: 23px;
+	height: 25px;
+	text-align:center;
+	display:inline-block;
+	line-height: 25px;
+	margin: 0px;
+	float:left;
+	cursor:pointer;
+	border-right:1px solid #ff0000;
+}
+.ui-segment span.option:last-child{
+	border-right: none;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.ui-segment span.option:first-child{
+	border-right: none;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.segment-select{
+	display:none;
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css" />
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/menu.3.segment.css" />
+		<style>
+			body {
+				line-height: 18px;
+			}
+			
+			p {
+				font-size: 14px;
+				font-weight: 100;
+			}
+			
+			html,
+			body {
+				background-color: #FFF500;
+			}
+			
+			.mui-card {
+				font-family: "微软雅黑";
+				font-size: 12px;
+				color: #666666;
+			}
+			
+			.my-navigate-left:before {
+				left: 15px;
+				content: '\e582';
+				position: absolute;
+				font-family: Muiicons;
+				font-size: inherit;
+				line-height: 1;
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				transform: translateY(-50%);
+				text-decoration: none;
+				color: #bbb;
+				-webkit-font-smoothing: antialiased;
+			}
+			
+			.my-left {
+				float: left;
+				width: 40%;
+				text-align: center;
+				margin: auto;
+			}
+			
+			.my-middle {
+				float: left;
+				width: 60%;
+				height: auto!important;
+				min-height: 50px;
+				font-size: 10px;
+				color: #666666;
+				text-align: center;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				border-left: 1px solid #c8c7cc;
+			}
+			
+			.lightGreenColor {
+				color: #0f891d;
+				font-size: 14px;
+			}
+			
+			.lightGrayColor {
+				color: #999999;
+				font-size: 12px;
+			}
+			
+			.lightBuleColor {
+				color: #00A0E9;
+			}
+			
+			.redcolor {
+				color: #FF0000;
+			}
+			
+			.myMarginTop {
+				margin-top: 3px;
+			}
+			
+			.mui-card .mui-table-view {
+				border: 3px solid rgba(253, 127, 16, 1.0);
+				border-radius: 0px;
+				background-color: #fffeec;
+			}
+			
+			.mui-content {
+				background-color: #fff500;
+				-webkit-overflow-scrolling: touch;
+			}
+			
+			.mui-table-view-cell {
+				overflow: hidden;
+				padding: 0px 0px;
+				-webkit-touch-callout: none;
+				display: flex;
+			}
+			
+			.mui-table-view-cell::after {
+				left: 1px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="mui-card" style="margin-bottom: 10px;">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<div class="my-left">
+							<p class="lightGreenColor">周一</p>
+							<p class="lightGrayColor myMarginTop">2016-12-01</p>
+						</div>
+						<div class="my-middle">
+							<p class="myMarginTop">北京烧鸭饭</p>
+							<p class="myMarginTop">宫保鸡丁</p>
+							<p class="myMarginTop">北京烧鸭饭</p>
+							<p class="myMarginTop">宫保鸡丁</p>
+							<p class="myMarginTop">北京烧鸭饭</p>
+							<p class="myMarginTop">宫保鸡丁</p>
+						</div>
+					</li>
+					<li class="mui-table-view-cell">
+						<div class="my-left">
+							<p class="lightGreenColor">周二</p>
+							<p class="lightGrayColor myMarginTop">2016-12-02</p>
+						</div>
+						<div class="my-middle">
+							<p>鱼香肉丝</p>
+							<p class="myMarginTop">酸辣土豆丝</p>
+							<p class="myMarginTop">糖醋里脊</p>
+						</div>
+					</li>
+					<li class="mui-table-view-cell">
+						<div class="my-left">
+							<p class="lightGreenColor">周三</p>
+							<p class="lightGrayColor myMarginTop">2016-12-03</p>
+						</div>
+						<div class="my-middle">
+							<p class="myMarginTop">糖醋鱼</p>
+						</div>
+					</li>
+					<li class="mui-table-view-cell">
+						<div class="my-left">
+							<p class="lightGreenColor">周四</p>
+							<p class="lightGrayColor myMarginTop">2016-12-04</p>
+						</div>
+						<div class="my-middle">
+							<p class="myMarginTop">农家大拌菜</p>
+							<p class="myMarginTop"> 酸辣土豆丝</p>
+							<p class="myMarginTop"> 糖醋里脊</p>
+							<p class="myMarginTop"> 糖醋里脊</p>
+							<p class="myMarginTop"> 糖醋里脊</p>
+						</div>
+					</li>
+					<li class="mui-table-view-cell">
+						<div class="my-left">
+							<p class="lightGreenColor">周五</p>
+							<p class="lightGrayColor myMarginTop">2016-12-05</p>
+						</div>
+						<div class="my-middle">
+							<p class="myMarginTop">糖醋鱼</p>
+							<p class="myMarginTop">韭菜炒虾仁</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<!--<script src="../js/mui.min.js"></script>-->
+	<script type="text/javascript" src="../js/jquery-1.4.min.js"></script>
+	<script type="text/javascript" src="../js/segment.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		jQuery(function($) {
+			$(".segment-select").Segment();
+		});
+	</script>
+
+</html>
